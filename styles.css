@@ -1,0 +1,68 @@
+/* Global styles */
+body {
+  background-color: lightblue; /* or use a specific color code, like #ADD8E6 */
+}
+
+/* First line styles */
+.first-line {
+  font-size: 40px;
+  text-align: center;
+  color: #800080;
+  font-family: 'Arial', sans-serif; /* replace with a "cool" font of your choice */
+}
+
+/* Second line styles */
+.second-line {
+  text-align: center;
+  font-style: italic;
+  margin-top: 1rem; /* adjust this value for more or less space between lines */
+}
+
+/* Add the following styles to your existing "styles.css" file */
+
+/* Info section styles */
+.info-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* Add this property to allow wrapping on smaller screens */
+}
+
+.info-image {
+  max-width: 100%; /* Change this value to 100% for a more responsive layout */
+  max-height: 300px;
+  flex: 1; /* Add this property for a more responsive layout */
+}
+
+.info-text {
+  max-width: 100%; /* Change this value to 100% for a more responsive layout */
+  flex: 1; /* Add this property for a more responsive layout */
+  padding-left: 1rem; /* Add some padding for better spacing on smaller screens */
+}
+
+.info-text h2 {
+  margin-bottom: 1rem;
+}
+
+.info-text ol {
+  padding-left: 1.5rem;
+}
+
+.info-text li {
+  margin-bottom: 0.5rem;
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 768px) {
+  .info-image {
+    max-width: 40%;
+  }
+
+  .info-text {
+    max-width: 50%;
+    padding-left: 2rem;
+  }
+}
